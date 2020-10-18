@@ -1,0 +1,476 @@
+doctype html
+html(lang="en")
+    head
+        |
+        |
+        //- Basic Page Needs
+        meta(charset="utf-8")
+        title RESUME
+        meta(name="description" content="Resume")
+        meta(name="keywords" content="")
+        meta(name="author" content="Mohammed_Sabri")
+        |
+        |
+        //- Mobile Specific Metas
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        |
+        |
+        //- Fixed
+        link(rel="stylesheet" href="css/vendor/fixed/fixed.css")
+        |
+        |
+        //- Normalize
+        link(rel="stylesheet" href="css/vendor/normalize/normalize.min.css")
+        |
+        |
+        //- Wowjs
+        link(rel="stylesheet" href="css/vendor/wow.js/animate.css")
+        |
+        |
+        //- Bootstrap
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        |
+        |
+        //- FontAwesome
+        script(src="https://kit.fontawesome.com/028972b223.js" crossorigin="anonymous")
+        |
+        |
+        //- CSS Stylesheet
+        link(rel="stylesheet" href="css/output.css")
+        |
+        |
+        //- Favicons
+        link(rel="shortcut icon" href="favicon/favicon-me.ico")
+        |
+        |
+    body(data-spy="scroll" data-target="#navbarResponsive" id="top")
+        |
+        |
+        //- Start Header Part
+        header#header
+
+            //- Start Navigation
+            nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+
+                //- Navbar-Brand
+                a(href="#header" class="navbar-brand wow bounceIn")
+                    img(src="images/logo/logo.png" loading="lazy" alt="logo")
+                button(class="navbar-toggler wow bounceIn" type="button" data-toggle="collapse" data-target="#navbarResponsive")
+                    span(class="navbar-toggler-icon")
+
+                //- Nav-Item
+                .collapse.navbar-collapse.wow.bounceIn#navbarResponsive
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#header") Home
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#about") About
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#resume") Resume
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#works") Works
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#testimonials") Testimonials
+                        li.nav-item.wow.bounceIn
+                            a(class="nav-link text-white text-uppercase font-weight-bold" href="#footer") Contacts
+            //- End Navigation
+            |
+            |
+            //- Start Hero-Section
+            .landing
+                .home-wrap
+                    .home-inner
+                        #snow_fall
+            .caption.text-center
+                h1.text-uppercase.font-weight-bold.pb-3.wow.bounceIn Welcome to my resume
+                h3.text-uppercase.pb-3.wow.bounceIn It's a pleasure to take a look to my resume
+                a(class="btn btn-lg btn-1 position-relative overflow-hidden rounded py-2 px-4 text-uppercase font-weight-bold text-white wow bounceIn" onclick="typeWriter()") Let's Go
+                p#demo
+                h3.type
+            //- End Hero-Section
+            |
+            |
+            //- Start Chevron
+            .chevron
+                a(class="chevron" href="#about")
+                    i(class="fas fa-chevron-circle-down")
+            //- End Chevron
+            |
+            |
+        //- End Header Part
+        |
+        |
+        //- Start Main Part
+        main#main
+            //- Start About Section
+            #about
+                .container
+                    .row.justify-content-around.text-center
+                        .col-lg-4.wow.bounceIn
+                            img(src="images/about-section/profilepic.png" class="profilepic" loading="lazy" alt="My Profilepic")
+                        .col-lg-8.wow.bounceIn
+                            h2.font-weight-bolder About Me
+                            p My name is Mohammed Sabri. I'm a Front End Developer with  2 years of experience in building and creating creative, integrated and responsive websites with clean, structured and readable code. I usually use HTML, Pugjs, CSS, Sass, Bootstrap, Reactjs, Vuejs in Front End and Laravel, MySQL in Back End. I have graduated from the Faculty of Al-Alsun (Languages) Ain Shams University since May 2015 with the Bachelor Degree in Chinese Language and Literature with a general grade very good with honors
+
+                    .row.justify-content-around
+                        .col-lg-6.wow.bounceIn
+                            h2.font-weight-bolder Contact Details
+                            p
+                                span Mohammed Sabri <br>
+                                span Imbaba - Giza <br>
+                                span (+20) 1 112 314 844 <br>
+                                span mohammedsabri328@Gmail.com 
+                        .btn.col-lg-6.wow.bounceIn
+                            a(href="Mohammed_Sabri_Resume.pdf" target="_blank") Download Resume &nbsp;
+                                i(class="fas fa-download")
+            //- End About Section
+            |
+            |
+            //- Start Resume Section
+            #resume
+                .container
+                    .narrow.text-center
+                        .sectionone
+                            .row.text-center.justify-content-around.wow.bounceIn
+                                .col-12
+                                    h2.text-uppercase.font-weight-bolder Education
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder University life
+                                    span Bachelor Degree in Chinese Language and Literature • May 2015
+                                    p Graduated from the Faculty of Al-Alsun (Languages), Ain Shams University since May 2015 with the Bachelor Degree in Chinese Language and Literature with a general grade very good with honors<br><br>At 2013 studied at Zhong Nan University in China for one year
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/education.png" loading="lazy")
+                        .sectiontwo
+                            .row.text-center.justify-content-around.wow.bounceIn
+                                .col-12
+                                    h2.text-uppercase.font-weight-bolder work
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder Teaching Assistant
+                                    span Teaching Assistant • October 2015 - April 2017
+                                    p Employed at The Faculty of Al-Alsun, Ain-Shams University as a Teaching Assistant since October 2015 until April 2017
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/teaching.png" loading="lazy")
+
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder Tourist Guide
+                                    span Chinese Tourist Guide • December 2016 - March 2018
+                                    p Worked as a Chinese tourist guide for several Chinese tourist groups at Pharaonic Flowers Company, Galaxy Tours Company and Solar Empire Company since December 2016 until March 2018
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/tour.png" loading="lazy")
+
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder Interpreter
+                                    span Chinese Interpreter • April 2018 - August 2018
+                                    p Worked at Kazereen Textile Company as a Chinese Interpreter since April 2018 until August 2018
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/translator.png" loading="lazy")
+
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder Customer Service Representative
+                                    span Customer Service Representative • March 2020 - August 2020
+                                    p Worked as Customer Service Representative at The National Bank of Egypt (NBA) since March 2020 until August 2020
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/customer.png" loading="lazy")
+
+                            .row.text-center.justify-content-around
+                                .col-lg-6.wow.bounceIn
+                                    h3.font-weight-bolder Front-End Developer
+                                    span Front-End Developer • August 2018 - Present
+                                    p Working as a Freelance Front-End Developer since August 2018 till now
+
+                                .col-lg-6.wow.bounceIn
+                                    img(src="images/resume/coding.png" loading="lazy")
+                        .sectionthree
+                            .row.text-center.justify-content-around.wow.bounceIn
+                                .col-12
+                                    h2.text-uppercase.font-weight-bolder programming skills
+
+                            .row.text-center.justify-content-around
+                                .col-12.wow.bounceIn
+                                    img(src="images/resume/p-skills.png" loading="lazy")
+
+                            .col-md
+                                .bars
+                                    .groupone
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info html" role="progressbar" style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em HTML (Pug JS)
+                                                    span 85%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info css" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em CSS (Sass)
+                                                    span 80%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info react" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em React JS
+                                                    span 70%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info vue" role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Vuejs
+                                                    span 65%
+                        
+                                    .grouptwo
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info bootstrap" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Bootstrap
+                                                    span 80%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info javascript" role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Javascript
+                                                    span 75%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info laravel" role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Laravel
+                                                    span 65%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info mysql" role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em MySql
+                                                    span 65%
+                        .sectionfour
+                            .row.text-center.justify-content-around.wow.bounceIn
+                                .col-12
+                                    h2.text-uppercase.font-weight-bolder language skills
+
+                            .row.text-center.justify-content-around
+                                .col-12.wow.bounceIn
+                                    img(src="images/resume/l-skills.png" loading="lazy")
+
+                            .col-md
+                                .bars
+                                    .groupthree
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info english" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em English
+                                                    span 80%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info spanish" role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Spanish
+                                                    span 65%
+                        
+                                    .groupfour
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info chinese" role="progressbar" style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Chinese
+                                                    span 85%
+                                        .progress.wow.bounceIn
+                                            div(class="progress-bar progress-bar-striped bg-info japanese" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                .perectage
+                                                    em Japanese
+                                                    span 70%
+            //-End Resume Section
+            |
+            |
+            //- Start Works Section
+            #works
+                .container.text-center
+                    .row.d-flex.align-items-center
+                        .col-1.d-flex.align-items-center.justify-content-center
+                            a(href="#carousel-Indicators" role="button" data-slide="prev")
+                                .carousel-nav-icon
+                                    i(class="fas fa-chevron-circle-left")
+                        .col-10.my-5
+                            div(id="carousel-Indicators" class="carousel slide pb-5" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000")
+                                ol(class="carousel-indicators")
+                                    li(data-target="#carousel-Indicators" data-slide-to="0" class="active")
+                                    li(data-target="#carousel-Indicators" data-slide-to="1")
+                                    li(data-target="#carousel-Indicators" data-slide-to="2")
+                                    li(data-target="#carousel-Indicators" data-slide-to="3")
+                                    li(data-target="#carousel-Indicators" data-slide-to="4")
+                                    li(data-target="#carousel-Indicators" data-slide-to="5")
+                                    li(data-target="#carousel-Indicators" data-slide-to="6")
+                                .carousel-inner
+                                    .carousel-item.active
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/The GYM.png" class="card-img-top" loading="lazy" alt="gym")
+                                                .card-body
+                                                    h4.card-title THE GYM WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Gym-Website/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/speed-wheels.png" class="card-img-top" loading="lazy" alt="courses")
+                                                .card-body
+                                                    h4.card-title SPEED WHEELS Wenditse
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text HTML / CSS / Bootstrap / JQuery
+                                                    a(href="https://mohammedsabri99.github.io/Speed-Wheels/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/courses_website.png" class="card-img-top" loading="lazy" alt="courses")
+                                                .card-body
+                                                    h4.card-title COURSES WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Courses-Website/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/My Blog.png" class="card-img-top" loading="lazy" alt="blog")
+                                                .card-body
+                                                    h4.card-title BLOG WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Blog/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/webcourses.png" class="card-img-top" loading="lazy" alt="webcourses")
+                                                .card-body
+                                                    h4.card-title WEB COURSES WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Courses-Website/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/travel.png" class="card-img-top" loading="lazy" alt="travel")
+                                                .card-body
+                                                    h4.card-title TRAVEL AGENCY WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Travel-Agency-Webpage/" class="btn btn-primary" target="_blank") Visit Website
+                                    .carousel-item
+                                        .row
+                                            .card.col-12.col-md.d-flex.align-items-center.justify-content-center.p-0
+                                                img(src="images/works/business.png" class="card-img-top" loading="lazy" alt="business")
+                                                .card-body
+                                                    h4.card-title BUSINESS WEBSITE
+                                                    h6.card-subtitle.mb-2 usage languages
+                                                    p.card-text Pugjs / Sass / Bootstrap / jQuery / FontAwesome / Wow.js
+                                                    a(href="https://mohammedsabri99.github.io/Bussiness-Website/" class="btn btn-primary" target="_blank") Visit Website
+                        .col-1.d-flex.align-items-center.justify-content-center
+                            a(href="#carousel-Indicators" data-slide="next")
+                                .carousel-nav-icon
+                                    i(class="fas fa-chevron-circle-right")
+            //- End Works Section
+            |
+            |
+            //- Start Testimonials Section
+            #testimonials
+                .container-fluid
+                    .row
+                        .box.col-xl.wow.bounceIn
+                            .imgBox
+                                img(src="images/testimonials/muhammed-ali.jpg" class="img1" loading="lazy")
+                            p Impossible is just a big word thrown around by small men who find it easier to live in the world they've been given than to explore the power they have to change it. Impossible is not a fact. It's an opinion. Impossible is not a declaration. It's a dare. Impossible is potential. Impossible is temporary. Impossible is nothing
+                            h4 Muhammad Ali <br>
+                                span 1942 – 2016
+
+                        .box.col-xl.wow.bounceIn
+                            .imgBox
+                                img(src="images/testimonials/martin-luther.jpg" class="img2" loading="lazy")
+                            p If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward
+                            h4 Martin Luther King Jr <br>
+                                span 1929 – 1968
+
+                        .box.col-xl.wow.bounceIn
+                            .imgBox
+                                img(src="images/testimonials/malcom-x.jpg" class="img3" loading="lazy")
+                            p There is no better than adversity. Every defeat, every heartbreak, every loss, contains its own seed, its own lesson on how to improve your performance next time
+                            h4 Malcolm X <br>
+                                span 1925 – 1965
+                        
+                        .box.col-xl.wow.bounceIn
+                            .imgBox
+                                img(src="images/testimonials/nelson-mandela.jpg" class="img4" loading="lazy")
+                            p I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear
+                            h4 Nelson Mandela <br>
+                                span 1918 –  2013
+            |
+            |
+            //- End Testimonials Section
+        |
+        |
+        //- End Main Part
+        |
+        |
+        //- Start Footer Part
+        #footer
+            .container
+                .row.justify-content-around
+                    ul.social-links
+                        .col.wow.bounceIn
+                            li
+                                a(href="https://www.facebook.com/mohammed.sabri.58" target="_blank")
+                                    i(class="fab fa-facebook-f")
+
+                        .col.wow.bounceIn
+                            li
+                                a(href="https://www.linkedin.com/in/mohammed-sabri-68a48a151/" target="_blank")
+                                    i(class="fab fa-linkedin-in")
+
+                        .col.wow.bounceIn
+                            li
+                                a(href="https://github.com/Sabri99" target="_blank")
+                                    i(class="fab fa-github")
+
+                .row.text-center
+                    .col-md-6.wow.bounceIn
+                        span.pr1.text-uppercase.text-white My Resume &copy; Copyright 2020
+                    .col-md-6.wow.bounceIn
+                        span.pr2.text-uppercase.text-white Designed by 
+                            a(href="#header") MOHAMMED SABRI
+
+                .row.text-center
+                    .col-12
+                        a(class="chevron" href="#top")
+                            i(class="fas fa-chevron-circle-up")
+        //- Start Footer Part
+
+        //- Start JS Stylesheet
+        |
+        |
+        //- jQuery CDN
+        script(src="js/vendor/jquery/jquery-3.3.1.js")
+        |
+        |
+        //- Bootstrap
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")
+        |
+        |
+        //- Wow js
+        script(src="js/vendor/wow js/wow.min.js")
+        |
+        |
+        //- Typed Js
+        script(src="js/vendor/typed/typed.js")
+        |
+        |
+        //- Particles
+        script(src="js/vendor/particles/particles.js")
+        script(src="js/vendor/particles/app.js")
+        |
+        |
+        // JS Stylesheet
+        script(src="js/main.js")
+        |
+        |
+        //- End JS Stylesheet

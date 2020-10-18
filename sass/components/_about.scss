@@ -1,0 +1,121 @@
+#about {
+    background: linear-gradient(180deg, $main-color, $secondary-color);
+    
+
+    .container {
+        padding: 100px 0px;
+
+        img {
+            width: 65%;
+            margin-top: 60px;
+
+            @include xs {
+                margin-top: 0px;
+                width: 55%;
+            }
+
+            @include sm {
+                margin-top: 0px;
+                width: 55%;
+            }
+
+            @include md {
+                margin-top: 0px;
+                width: 40%;
+            }
+
+            @include lg {
+                margin-top: 0px;
+                width: 40%;
+            }
+
+            @include xl {
+                margin-top: 80px;
+                width: 75%;
+            }
+        }
+
+        h2 {
+            font-family: 'Open Sans-bold', sans-serif;
+            color: $secondary-color;
+            font-size: $heading-font;
+
+            @include xs {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            @include sm {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            @include md {
+                text-align: center;
+                font-size: 40px;
+            }
+
+            @include lg {text-align: center;}
+        }
+
+        p {
+            font-family: 'Libre Baskerville', serif;
+            text-align: justify;
+            color: $white-color;
+            line-height: 1.6;
+            font-size: 22px;
+
+            @include xs {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            @include sm {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            @include md {
+                text-align: center;
+                font-size: 22px;
+            }
+
+            @include lg {text-align: center;}
+        }
+
+        .btn {
+            padding-top: 155px;
+
+            @include xs {padding-top: 0px;}
+            @include sm {padding-top: 0px;}
+            @include md {padding-top: 0px;}
+            @include lg {padding-top: 10px;}
+            @include xl {padding-top: 155px;}
+
+            a {
+                padding: 15px 25px;
+                background-color: $white-color;
+                color: $secondary-color;
+                text-align: center;
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: bolder;
+                outline: none;
+                border: none;
+                border-radius: 15px;
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+
+                @include xs {font-size: 18px;}
+                @include sm {font-size: 18px;}
+                @include md {font-size: 20px;}
+    
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $white-color;
+                    border: 1px solid $white-color;
+                }
+            }
+        }
+    }
+}

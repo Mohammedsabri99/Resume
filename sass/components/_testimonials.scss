@@ -1,0 +1,123 @@
+#testimonials {
+
+    .container-fluid {
+        padding: 180px 0px 100px 0px;
+
+        @include xs {padding: 180px 0px 0px 0px;}
+        @include sm {padding: 180px 0px 0px 0px;}
+        @include md {padding: 180px 0px 0px 0px;}
+        @include lg {padding: 180px 0px 0px 0px;}
+        @include xl {padding: 180px 0px 0px 0px;}
+
+        .box {
+            position: relative;
+            padding: 80px 40px 40px;
+            transition: 0.5s;
+            text-align: center;
+            background: $white-color;
+            cursor: pointer;
+
+            @include xs {margin-bottom: 85px;}
+            @include sm {margin-bottom: 85px;}
+            @include md {margin-bottom: 85px;}
+            @include lg {margin-bottom: 85px;}
+            @include xl {margin-bottom: 85px;}
+
+            &:hover {background: linear-gradient(180deg, $main-color, $secondary-color);}
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                width: 80px;
+                height: 80px;
+                background: url(../images/testimonials/quotes.png);
+                background-size: cover;
+                opacity: 0.05;
+                pointer-events: none;
+                transition: 0.5s;
+
+                @include xs {right: 5px;}
+                @include sm {right: 5px;}
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 20px;
+                left: 40px;
+                width: 80px;
+                height: 80px;
+                background: url(../images/testimonials/quotes2.png);
+                background-size: cover;
+                opacity: 0.05;
+                pointer-events: none;
+                transition: 0.5s;
+                transform: rotate(180deg) translateY(0px);
+
+                @include xs {left: 5px;}
+                @include sm {left: 5px;}
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                transition: 0.5s;
+            }
+
+            h4 {
+                margin: 20px 0 0;
+                padding: 0;
+                transition: 0.5s;
+                font-size: 18px;
+                color: $secondary-color;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+
+                span {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #c5c5c5;
+                    transition: 0.5s;
+                }
+            }
+
+            .imgBox {
+                position: absolute;
+                top: -60px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                overflow: hidden;
+        
+                .img1 {max-width: 100%;}
+                .img2 {max-width: 100%;}
+                .img3 {max-width: 100%;}
+                .img4 {max-width: 100%;}
+            }
+        }
+    }
+    
+    .container-fluid .box:hover p,
+    .container-fluid .box:hover h4,
+    .container-fluid .box:hover h4 span {
+        color: $white-color;
+    }
+    
+    .container-fluid .box:hover:before {
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+    
+    .container-fluid .box:hover:after {
+        transform: rotate(180deg) translateY(-60px);
+        opacity: 1;
+    }
+}
+
+

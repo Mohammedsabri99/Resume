@@ -1,0 +1,306 @@
+#resume {
+    .container {
+        padding: 100px 0px 60px 0px;
+
+        @include xs {padding: 50px 0px 60px 0px;}
+        @include sm {padding: 50px 0px 60px 0px;}
+        @include md {padding: 80px 0px 60px 0px;}
+
+        h2 {
+            font-family: 'Open Sans-bold', sans-serif;
+            font-size: $heading-font;
+            color: $secondary-color;
+
+            @include xs {font-size: 30px;}
+            @include sm {font-size: 30px;}
+            @include md {font-size: 40px;}
+        }
+    
+        h3 {
+            font-size: $h3-font;
+            color: $secondary-color;
+
+            @include xs {font-size: 25px;}
+            @include sm {font-size: 25px;}
+        }
+    
+        span {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            font-style: italic;
+            color: $italic-color;
+
+            @include xs {font-size: 13px;}
+            @include sm {font-size: 13px;}
+            @include md{font-size: 18px;}
+        }
+    
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            text-align: justify;
+
+            @include xs {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            @include sm {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            @include md {text-align: center;}
+            @include lg {text-align: center;}
+        }
+    
+        img {
+            width: 70%;
+
+            @include xs {width: 100%;}
+            @include sm {width: 100%;}
+            @include md {width: 100%;}
+        }
+
+        .sectionone {border-bottom: 1px solid $italic-color;}
+        .sectiontwo {border-bottom: 1px solid $italic-color;}
+        .sectionthree {border-bottom: 1px solid $italic-color;}
+
+        .bars {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            @include xs {display: inline-block;}
+            @include sm {display: inline-block;}
+            @include md {display: inline-block;}
+            @include lg {display: inline-block;}
+            @include xl {display: inline-block;}
+
+            .groupone {
+
+                .progress {
+                    width: 506px;
+                    height: 50px;
+                    margin-bottom: 40px;
+
+                    @include xs {width: 250px;}
+                    @include sm {width: 300px;}
+                    @include md {width: 480px;}
+                    @include lg {width: 650px;}
+                    @include xl {width: 800px;}
+
+                    .html {
+                        width: 85%;
+                        animation: html 2s ease;
+                        -moz-animation: html 2s ease;
+                        -webkit-animation: html 2s ease;
+                    }
+
+                    .css {
+                        width: 80%;
+                        animation: css 2s ease;
+                        -moz-animation: css 2s ease;
+                        -webkit-animation: css 2s ease;
+                    }
+
+                    .react {
+                        width: 70%;
+                        animation: react 2s ease;
+                        -moz-animation: react 2s ease;
+                        -webkit-animation: react 2s ease;
+                    }
+
+                    .vue {
+                        width: 65%;
+                        animation: vue 2s ease;
+                        -moz-animation: vue 2s ease;
+                        -webkit-animation: vue 2s ease;
+                    }
+
+                    .perectage {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        em {
+                            font-size: 20px;
+                            padding-left: 30px;
+                            font-weight: 700;
+                        }
+    
+                        span {
+                            font-size: 20px;
+                            padding-right: 10px;
+                            font-weight: 700;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+
+            .grouptwo {
+
+                .progress {
+                    width: 506px;
+                    height: 50px;
+                    margin-bottom: 40px;
+
+                    @include xs {width: 250px;}
+                    @include sm {width: 300px;}
+                    @include md {width: 480px;}
+                    @include lg {width: 650px;}
+                    @include xl {width: 800px;}
+
+                    .bootstrap {
+                        width: 80%;
+                        animation: bootstrap 2s ease;
+                        -moz-animation: bootstrap 2s ease;
+                        -webkit-animation: bootstrap 2s ease;
+                    }
+                    
+                    .javascript {
+                        width: 75%;
+                        animation: javascript 2s ease;
+                        -moz-animation: javascript 2s ease;
+                        -webkit-animation: javascript 2s ease;
+                    }
+
+                    .laravel {
+                        width: 65%;
+                        animation: laravel 2s ease;
+                        -moz-animation: laravel 2s ease;
+                        -webkit-animation: laravel 2s ease;
+                    }
+
+                    .mysql {
+                        width: 65%;
+                        animation: mysql 2s ease;
+                        -moz-animation: mysql 2s ease;
+                        -webkit-animation: mysql 2s ease;
+                    }
+
+                    .perectage {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        em {
+                            font-size: 20px;
+                            padding-left: 30px;
+                            font-weight: 700;
+                        }
+    
+                        span {
+                            font-size: 20px;
+                            padding-right: 10px;
+                            font-weight: 700;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+
+            .groupthree {
+
+                .progress {
+                    width: 506px;
+                    height: 50px;
+                    margin-bottom: 40px;
+
+                    @include xs {width: 250px;}
+                    @include sm {width: 300px;}
+                    @include md {width: 480px;}
+                    @include lg {width: 650px;}
+                    @include xl {width: 800px;}
+
+                    .english {
+                        width: 80%;
+                        animation: english 2s ease;
+                        -moz-animation: english 2s ease;
+                        -webkit-animation: english 2s ease;
+                    }
+                    
+                    .spanish {
+                        width: 65%;
+                        animation: spanish 2s ease;
+                        -moz-animation: spanish 2s ease;
+                        -webkit-animation: spanish 2s ease;
+                    }
+
+                    .perectage {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        em {
+                            font-size: 20px;
+                            padding-left: 30px;
+                            font-weight: 700;
+                        }
+    
+                        span {
+                            font-size: 20px;
+                            padding-right: 10px;
+                            font-weight: 700;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+
+            .groupfour {
+
+                .progress {
+                    width: 506px;
+                    height: 50px;
+                    margin-bottom: 40px;
+
+                    @include xs {width: 250px;}
+                    @include sm {width: 300px;}
+                    @include md {width: 480px;}
+                    @include lg {width: 650px;}
+                    @include xl {width: 800px;}
+
+                    .chinese {
+                        width: 85%;
+                        animation: chinese 2s ease;
+                        -moz-animation: chinese 2s ease;
+                        -webkit-animation: chinese 2s ease;
+                    }
+                    
+                    .japanese {
+                        width: 70%;
+                        animation: japanese 2s ease;
+                        -moz-animation: japanese 2s ease;
+                        -webkit-animation: japanese 2s ease;
+                    }
+
+                    .perectage {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        em {
+                            font-size: 20px;
+                            padding-left: 30px;
+                            font-weight: 700;
+                        }
+    
+                        span {
+                            font-size: 20px;
+                            padding-right: 10px;
+                            font-weight: 700;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

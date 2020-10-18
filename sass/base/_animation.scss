@@ -1,0 +1,212 @@
+// Bars
+// ===========================================================================
+
+// Group One
+// ==================
+@keyframes html {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@-moz-keyframes html {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@-webkit-keyframes html {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-moz-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-webkit-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@keyframes react {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+@-moz-keyframes react {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+@-webkit-keyframes react {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+@keyframes vue {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-moz-keyframes vue {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-webkit-keyframes vue {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+// Group Two
+// ==================
+
+@keyframes bootstrap {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-moz-keyframes bootstrap {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-webkit-keyframes bootstrap {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 75%;  }
+}
+
+@-moz-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 75%;  }
+}
+
+@-webkit-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 75%;  }
+}
+
+@keyframes laravel {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-moz-keyframes laravel {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-webkit-keyframes laravel {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@keyframes mysql {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-moz-keyframes mysql {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-webkit-keyframes mysql {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+// Group Three
+// ==================
+
+@keyframes english {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-moz-keyframes english {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@-webkit-keyframes english {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+
+@keyframes spanish {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-moz-keyframes spanish {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+@-webkit-keyframes spanish {
+    0%   { width: 0px;  }
+    100% { width: 65%;  }
+}
+
+// Group Four
+// ==================
+
+@keyframes chinese {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@-moz-keyframes chinese {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@-webkit-keyframes chinese {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+
+@keyframes japanese {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+@-moz-keyframes japanese {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+@-webkit-keyframes japanese {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+
+// Animate
+// ===========================================================================
+
+@keyframes animate {
+    0% {transform: translate(-50%,-50%) rotate(0deg);}
+    25% {transform: translate(-50%,-50%) rotate(180deg);}
+    50% {transform: translate(-50%,-50%) rotate(180deg);}
+    75% {transform: translate(-50%,-50%) rotate(360deg);}
+    100% {transform: translate(-50%,-50%) rotate(360deg);}
+}
+
+@keyframes animateBg {
+    0% {height: 0;}
+    25% {height: 0;}
+    50% {height: 100%;}
+    75% {height: 100%;}
+    100% {height: 0;}
+}

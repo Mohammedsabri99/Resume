@@ -1,0 +1,39 @@
+// Media Query
+// ===========================================================================
+
+@mixin xs {
+    @media all and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media all and (min-width: 321px) and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media all and (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media all and (min-width:769px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media all and (min-width:992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin exl {
+    @media all and (min-width:1199px) {
+        @content;
+    }
+}
+

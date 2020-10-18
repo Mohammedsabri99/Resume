@@ -1,0 +1,116 @@
+#header {
+
+    nav {
+        transition: .5s;
+
+        @include xl {
+            &.black {
+                background: rgba($main-color,.8);
+                height: 80px;
+                padding: 10px 50px;
+
+                .navbar-brand img {width: 55%;}
+    
+                .navbar-collapse .nav-item a {
+                    color: $secondary-color;
+                    font-size: 15px;
+                    font-weight: 0px;
+                }
+            }
+        }
+
+        @include exl {
+            &.black {
+                background: rgba($main-color,.8);
+                height: 80px;
+                padding: 10px 50px;
+    
+                .navbar-brand img {width: 55%;}
+    
+                .navbar-collapse .nav-item a {
+                    color: $secondary-color;
+                    font-size: 15px;
+                    font-weight: 0px;
+                }
+            }
+        }
+
+        @include xs {
+            &.black {background: rgba($main-color,.8);}
+        }
+
+        @include sm {
+            &.black {background: rgba($main-color,.8);}
+        }
+
+        @include md {
+            &.black {background: rgba($main-color,.8);}
+        }
+
+        @include lg {
+            &.black {background: rgba($main-color,.8);}
+        }
+
+        .navbar-brand {
+
+            @include xs {margin: 0px}
+            @include sm {margin: 0px}
+
+            img {
+                width: 75%;
+                transition: .5s;
+
+                @include xs {width: 50%;}
+                @include sm {width: 50%;}
+            }
+        }
+
+        .navbar-toggler {
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                outline: none;
+            }
+        }
+
+        .navbar-collapse {
+
+            @include xs {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            @include sm {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            @include md {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            @include lg {
+                background-color: $main-color;
+                opacity: .8;
+            }
+
+            .nav-item {
+                a {
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                    padding: 5px 20px;
+                    transition: .5s;
+
+                    &:focus,
+                    &:hover {
+                        background-color: $secondary-color;
+                        transform: scale(1.1);
+
+                        @include lg {transform: translateX(-10px);}
+                    }
+                }
+            }
+        }
+    }
+}
